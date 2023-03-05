@@ -1,0 +1,149 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+p {
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+   padding: 0;
+}
+
+ul,
+li {
+   list-style: none;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 29px;
+   color: #fff;
+   background-color: black;
+}
+
+.container {
+   max-width: 1229px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.header {
+   padding-top: 60px;
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 131px;
+   }
+   &__logo {
+      color: #fff;
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+   }
+   .menu {
+      display: flex;
+      gap: 0 50px;
+      &__item {
+         font-size: 12px;
+         line-height: 12px;
+         letter-spacing: 1.5px;
+         color: rgba(255, 255, 255, 0.65);
+         transition: all .3s;
+      }
+      &__item:hover{
+         color:#fff;
+      }
+   }
+   &__content {
+      position: relative;
+      margin-bottom: 105px;
+      &-wrapp {
+         display: inline-block;
+         border-radius: 200px;
+         padding: 9px 15px;
+         background-color: rgba(255, 255, 255, 0.1);
+         margin-bottom: 31px;
+      }
+      &-decor {
+         display: inline-block;
+         letter-spacing: 1.5px;
+         font-weight: 600;
+         font-size: 10px;
+         line-height: 18px;
+         background-color: #25ab75;
+         border-radius: 200px;
+         padding: 4px 10px;
+      }
+      &-descr {
+         display: inline-block;
+         font-size: 12px;
+         line-height: 18px;
+         letter-spacing: 0.5px;
+         color: #ffffff;
+         opacity: 0.8;
+         margin-left: 15px;
+      }
+      &-title {
+         color: #fff;
+         letter-spacing: -2px;
+         line-height: 170px;
+         font-size: 200px;
+         font-weight: 600;
+         margin-bottom: 42px;
+         max-width: 814px;
+      }
+      &-text {
+         margin-bottom: 50px;
+         opacity: 0.5;
+         color: #fff;
+         letter-spacing: 0.5px;
+         max-width: 600px;
+      }
+      &-link {
+         display: inline-block;
+         padding: 24px 43px;
+         color: #fff;
+         letter-spacing: 1px;
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 22px;
+         border-radius: 10px;
+      }
+      &-link.started {
+         margin-right: 30px;
+         background-color: #25ab75;
+      }
+      &-link.preview {
+         background-color: rgba(255, 255, 255, 0.1);
+      }
+      &-img {
+         position: absolute;
+         top: -15%;
+         left: 47%;
+         max-height: 1000px;
+      }
+   }
+}
