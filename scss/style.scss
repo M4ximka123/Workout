@@ -223,3 +223,100 @@ body {
       }
    }
 }
+
+.programm {
+   margin-bottom: 150px;
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      &-title {
+         position: relative;
+         color: #fff;
+         letter-spacing: -2px;
+         line-height: 120px;
+         font-size: 120px;
+         font-weight: 600;
+         max-width: 523px;
+      }
+      &-title::after {
+         content: "";
+         background-image: url("../images/programm/decor.svg");
+         background-repeat: no-repeat;
+         position: absolute;
+         left: -35px;
+         bottom: -100px;
+         width: 519px;
+         height: 208px;
+         z-index: -2;
+      }
+      &-text {
+         color: rgba(255, 255, 255, 0.7);
+         letter-spacing: 0.5px;
+         line-height: 50px;
+         font-size: 25px;
+         max-width: 558px;
+         padding-top: 20px;
+         margin-bottom: 50px;
+      }
+      &-link {
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 22px;
+         letter-spacing: 1px;
+         color: #ffffff;
+         padding: 24px 43px;
+         background-color: #25ab75;
+         border-radius: 10px;
+      }
+   }
+   &__top::before {
+      content: "";
+      position: absolute;
+      right: -10%;
+      top: -10%;
+      z-index: -1;
+      min-width: 999px;
+      height: 733px;
+      background-color: #fff;
+      opacity: 0.1;
+   }
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 795px;
+      gap: 0 3px;
+      &-img {
+         border-radius: 10px;
+      }
+      &-name {
+         color: #fff;
+         letter-spacing: 0.5px;
+         line-height: 25px;
+         font-size: 20px;
+         font-weight: 500;
+      }
+      &-descr {
+         font-size: 14px;
+         line-height: 14px;
+         letter-spacing: 0.5px;
+         color: #ffffff;
+         opacity: 0.5;
+      }
+   }
+   .flex-item__left {
+      align-self: center;
+   }
+   .flex-item__center {
+      align-self: flex-end;
+      margin-bottom: -115px;
+   }
+   .flex-item__right {
+      align-self: flex-start;
+   }
+   .flex-item__right span {
+      display: inline-block;
+      margin-left: 20px;
+   }
+}
